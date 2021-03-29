@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Appoinment extends Model
 {
-public $table = 'appoinments'
+public $table = 'appoinments';
 }
