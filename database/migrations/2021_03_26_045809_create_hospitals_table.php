@@ -16,13 +16,13 @@ class CreateHospitalsTable extends Migration
         Schema::create('hospitals', function (Blueprint $table) {
             $table->id();
             $table->string('HospitalName',100);
-            $table->string('RegNo',10);
+            $table->string('RegNo',100);
             $table->string('address',100)->nullable();
-            $table->string('image',10)->nullable();
+            $table->string('image',255)->nullable();
             $table->string('about',200)->nullable();
-            $table->string('bank',10)->nullable();
-            $table->string('branch',10)->nullable();
-            $table->string('accountNo',10)->nullable();
+            $table->string('bank',100)->nullable();
+            $table->string('branch',100)->nullable();
+            $table->string('accountNo',100)->nullable();
 
 
             $table->timestamps();
