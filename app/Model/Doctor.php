@@ -13,6 +13,14 @@ class Doctor extends Model
     }
 
     public function appointments(){
-        return $this->hasMany(Doctor::class);
+        return $this->belongsTo(Doctor::class);
+    }
+
+    public function payments(){
+         return $this->hasMany(Payment::class);
+    }
+
+    public function treatments(){
+        return $this->hasMany(Treatment::class);
     }
 }

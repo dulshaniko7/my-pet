@@ -16,4 +16,8 @@ class Hospital extends Model
         return $this->belongsToMany(Appoinment::class,'appoinment_hospital','hospital_id','appointment_id');
     }
 
+    public function payments(){
+        return $this->hasMany(Payment::class);
+    }
+
 }
