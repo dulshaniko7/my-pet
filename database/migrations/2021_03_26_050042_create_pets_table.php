@@ -20,7 +20,7 @@ class CreatePetsTable extends Migration
             $table->string('breed')->nullable();
             $table->string('bloodGroup')->nullable();
             $table->string('color')->nullable();
-            $table->string('note')->nullable();
+            $table->string('name')->nullable();
             $table->date('dob')->nullable();
             $table->foreignId('petType_id')->constrained('pet_types','id')->onDelete('cascade');
             $table->foreignId('petOwner_id')->constrained('pet_owners','id')->onDelete('cascade');
